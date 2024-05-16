@@ -1,0 +1,33 @@
+@layer base {
+    html {
+        color: var( --jw-color-gray );
+    }
+    body{
+        @apply bg-gray-100
+    }
+}
+
+@layer components {
+
+    a,button,.pointer{
+        @apply cursor-pointer;
+    }
+    .link{
+        @apply block mb-2 text-sm font-medium text-blue-600
+    }
+    .jw-dot{
+        @apply inline-block rounded-full h-2 w-2;
+    }
+    .jw-dot__large{
+        @apply inline-block rounded-full h-6 w-6;
+    }
+    .jw-dot__text{
+        @apply inline-flex rounded-full h-8 w-8 items-center justify-center
+    }
+    .jw-pill{
+        @apply inline-flex items-center rounded-full px-2 py-1 font-medium
+    }
+    .jw-pill__medium{
+        @apply rounded-md
+    }
+}

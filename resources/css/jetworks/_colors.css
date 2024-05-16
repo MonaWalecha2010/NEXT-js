@@ -1,0 +1,27 @@
+:root {
+    --jw-color-white: rgb(255,255,255);
+    --jw-color-black: rgb(0,0,0);
+    --jw-color-black-light: rgb(238,238,238);
+    --jw-color-gray-dark: rgb(107,114,128);
+    --jw-color-gray: rgb(156,163,175);
+    --jw-color-gray-light: rgb(209,213,219);
+    --jw-color-gray-lightest: rgb(243,244,246);
+    --jw-color-red : rgb(220,38,38);
+    --jw-color-red-light :rgb(254,226,226);
+    --jw-color-red-lightest : rgb(254,242,242);
+    --jw-color-orange: rgb(245,158,11);
+    --jw-color-orange-light: rgb(254,243,199);
+    --jw-color-orange-lightest: rgb(254,251,235);
+    --jw-color-orange-lightest-fade: rgba(254,251,235, 0.5);
+    --jw-color-cyan: rgb(83,159,244);
+    --jw-color-cyan-light: rgb(204,255,254);
+    --jw-color-cyan-lightest: rgb(234,255,255);
+/*    --jw-color-blue: rgb(83,159,244);*/
+    --jw-color-blue: rgb(25, 137, 233);
+    --jw-color-blue-dark: rgb(25,137,233);
+    --jw-color-blue-light: rgb(219,234,254);
+    --jw-color-blue-lightest:rgb(239,246,255);
+    --jw-color-green: rgb(52,211,153);
+    --jw-color-green-light: rgb(209,250,229);
+    --jw-color-green-lightest: rgb(236,253,245);
+}

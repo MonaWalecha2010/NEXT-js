@@ -1,0 +1,8 @@
+@layer components {
+
+    .jw-users-group-user{
+        @apply inline-flex rounded-full h-8 w-8 items-center justify-center  ring-2 ring-white
+    }
+
+}
+

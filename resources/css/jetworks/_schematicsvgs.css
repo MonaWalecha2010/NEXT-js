@@ -1,0 +1,7 @@
+#panels{
+    svg{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

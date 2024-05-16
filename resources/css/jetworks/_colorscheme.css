@@ -1,0 +1,181 @@
+/** Dots **/
+@each $color in white, gray, red, orange, cyan, blue, green, black {
+    .jw{
+
+        &-text__$(color){
+            color: var( --jw-color-$(color) ) !important;
+            &-light {
+                color: var( --jw-color-$(color)-light ) !important;
+            }
+        }
+
+        &-bg__$(color){
+            background-color: var( --jw-color-$(color) );
+            &-light {
+                background-color: var( --jw-color-$(color)-light );
+            }
+            &-lightest {
+                background-color: var( --jw-color-$(color)-lightest );
+                &-opacity-50{
+                    background-color: rgba(var(--jw-color-$(color)-lightest), 0.5) ;
+                }
+            }
+        }
+
+        &-dot__$(color),
+        &-bg__$(color){
+            background-color: var( --jw-color-$(color) );
+
+            &-light {
+                background-color: var( --jw-color-$(color)-light );
+            }
+        }
+
+        &-border__$(color){
+            border-color: var( --jw-color-$(color) );
+
+            &-light {
+                background-color: var( --jw-color-$(color)-light );
+            }
+        }
+
+        &-btn{
+            &__$(color) {
+                color: white;
+                background-color: var( --jw-color-$(color) );
+                border-color: var( --jw-color-$(color) );
+
+                &:hover:enabled,
+                &:focus:enabled{
+                    color: var( --jw-color-$(color) );
+                    background-color: white;
+                    border-color: var( --jw-color-$(color) );
+                }                
+
+                &-dark{
+                    background-color: var( --jw-color-$(color)-dark );
+                    border-color: var( --jw-color-$(color)-dark );
+                    &:hover,
+                    &:focus{
+                        color: var( --jw-color-$(color)-dark );
+                        background-color: white;
+                        border-color: var( --jw-color-$(color)-dark );
+                    }
+                }
+
+                &-light{
+                    background-color: var( --jw-color-$(color)-light );
+                    border-color: var( --jw-color-$(color)-light );
+                    &:hover,
+                    &:focus{
+                        color: var( --jw-color-$(color)-light );
+                        background-color: white;
+                        border-color: var( --jw-color-$(color)-light );
+                    }
+                }
+
+            }
+            &__white{
+                color: var(--jw-color-black);
+                background-color: white;
+                border-color: var(--jw-color-black);
+
+                &:hover,
+                &:focus{
+                    color: white;
+                    background-color: var(--jw-color-black);
+                    border-color: var(--jw-color-black);
+                }
+            }
+        }
+
+        &-users-group-user{
+            &__$(color) {
+                color: white;
+                background-color: var( --jw-color-$(color) );
+            }
+        }
+
+        &-pill,
+        &-schematic-pill{
+            &__$(color) {
+                color: var( --jw-color-$(color) );
+                background-color: var( --jw-color-$(color)-light );
+                border-color: var( --jw-color-$(color) );
+            }
+        }
+
+        &-svg-panels{
+            .panel__$(color){
+                --svg-panel-color: var( --jw-color-$(color) );
+                .border{
+                    fill-opacity: 100 !important;
+                    fill: var( --svg-panel-color ) !important;
+                    &:hover{
+                        fill: var( --svg-panel-color ) !important;
+                    }
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    .label,
+                    .arrow,
+                    .border{
+                        fill: var( --svg-panel-color ) !important;
+                    }
+                }
+            }
+        }
+
+        &-svg{
+            &__$(color) {
+                fill: var(--jw-color-$(color));
+                fill-opacity: 100;
+
+                &-light {
+                    fill: var( --jw-color-$(color)-light );
+                    fill-opacity: 100;
+                }
+            }
+
+            &-stroke{
+                &__$(color) {
+                    stroke: var(--jw-color-$(color));
+                    &-light {
+                        stroke: var( --jw-color-$(color)-light );
+                    }
+                }
+            }
+        }
+
+    }
+
+    .icon{
+        &__$(color) {
+            svg{
+                fill: var(--jw-color-$(color));
+            }
+            &-light {
+                svg{
+                    fill: var( --jw-color-$(color)-light );
+                }
+            }
+        }
+
+        &-stroke{
+            &__$(color) {
+                svg{
+                    stroke: var(--jw-color-$(color));
+                }
+
+                &-light {
+                    svg{
+                        stroke: var( --jw-color-$(color)-light );
+                    }
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+body {
+    .ql-snow{
+        &.ql-container{
+            @apply rounded-b-md border-gray-300 shadow-sm bg-white h-[70%];
+        }
+        &.ql-toolbar{
+            @apply rounded-t-md border-gray-300 shadow-sm bg-white;
+        }
+        .ql-editor{
+            height: 160px;
+            overflow-y: auto;
+            @apply text-base text-gray-500            
+        }
+    }
+    .exclude-toolbar{
+        .ql-snow{
+            &.ql-container{
+                @apply rounded-md border h-[86%] ;
+            }            
+        }
+        &.small{
+            .ql-editor{
+                height: 120px; 
+                overflow-y: auto;               
+            }
+        }
+    }
+}

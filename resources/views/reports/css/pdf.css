@@ -1,0 +1,202 @@
+/** Define the margins of your page **/
+@page {
+    margin: 20px 10px 10px 20px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    height: 30px;
+    font-size: 10px;
+    line-height: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header-left,
+.header-right,
+.schematic-left,
+.schematic-right,
+.footer-left,
+.footer-right{
+    float: left;
+    display: block;
+}
+
+.header-left,
+.header-right,
+.schematic-left,
+.schematic-right {
+    width: 50%;
+}
+
+.header-right,
+.schematic-right,
+.footer-right{
+    text-align: right;
+}
+
+.footer-left{
+    width: 60%
+}
+
+.footer-right{
+    width: 40%
+}
+.footer-detail{
+    margin-right: 10px;
+}
+
+.footer-legal{
+    color: #666;
+}
+
+.cover-page{
+    position: fixed;
+    top: 450px;
+    left: 20px;
+    right: 20px;
+}
+.aeroplane-detail{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 10px;
+}
+.logo {
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.header-h2 {
+    font-size: 28px;
+}
+
+.header-h3 {
+    font-size: 17px;
+}
+
+.sheet-numbers{
+    display: block;
+    margin-bottom: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #BCC1C7;
+    padding: 0;
+}
+
+th {
+    padding: 4px 5px;
+    background-color: #D1D5DB;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1;
+}
+
+td {
+    width: 20%;
+    padding: 0;
+    vertical-align: center;
+}
+
+tr td {
+    background-color: white;
+}
+
+tr:nth-of-type(2n+0) td {
+    background-color: #ECF0F7;
+}
+
+thead th:first-of-type{
+    border-top-left-radius: 5px;
+}
+thead th:last-of-type{
+    border-top-right-radius: 5px;
+}
+
+.td-cell{
+    position: relative;
+    padding: 4px 8px;
+}
+
+.td-content{
+    display: block;
+}
+
+.name,
+.initials,
+.panel {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.initials{
+    font-size: 8px;
+}
+
+.signature{
+    width: 70%;
+    mix-mode-blend: multiply;
+}
+
+.stamp {
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    right: 6px;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    transform: rotate(10deg);
+}
+
+.panel {
+    font-size: 14px;
+}
+
+.name {
+    margin-top: 4px;
+    font-size: 11px;
+}
+
+.initials {
+    display: inline-block;
+    max-width: 30px;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    padding: 5px 3px;
+    text-align: center;
+}
+
+.pagenum:after {
+    content: counter(page);
+}
+
+.page-break {
+    page-break-after: always;
+}

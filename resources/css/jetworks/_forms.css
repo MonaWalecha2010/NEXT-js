@@ -1,0 +1,45 @@
+@layer components {
+
+    .jw-form{
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        textarea,
+        select{
+            @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-500 focus:ring-gray-500 sm:text-sm placeholder-gray-400
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        textarea,
+        select
+        {
+            @apply text-gray-500 font-medium
+        }
+        select{
+            @apply pr-10 focus:outline-none
+        }
+        label,
+        .label{
+            @apply block w-full mb-2 text-sm font-semibold text-gray-900
+        }
+        label.jw-toggle{
+            @apply flex
+        }
+        .errors{
+            @apply text-red-500 text-xs pt-2
+        }
+    }
+    
+    select.custom-dropdown{
+        background-image: url("../../public/img/up-down-icon.svg");
+        background-size: initial;
+        @apply bg-no-repeat
+    }
+    
+
+}

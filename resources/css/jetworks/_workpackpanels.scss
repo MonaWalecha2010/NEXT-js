@@ -1,0 +1,11 @@
+@layer components {
+    .panel-note-count{
+        @apply relative h-6 w-6 inline-block;
+        &-number{
+            @apply absolute inline-flex h-4 w-4 items-center justify-center rounded-full bg-black text-white text-xs;
+            top: -0.25rem;
+            right: -0.25rem;
+        }
+    }
+}
+

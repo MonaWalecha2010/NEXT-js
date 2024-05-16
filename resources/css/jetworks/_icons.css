@@ -1,0 +1,18 @@
+@layer components {
+    svg.icon{
+        @apply block w-full h-auto fill-current
+    }
+
+    .icon{
+        @apply inline-block
+    }
+
+    .icon-white svg.icon{
+        fill: white;
+    }
+
+    .after-icon{
+        @apply inline-block ml-1
+    }
+
+}

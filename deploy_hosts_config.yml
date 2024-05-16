@@ -1,0 +1,66 @@
+import:
+  - recipe/deploy/vendors.php
+  - recipe/laravel.php
+  - contrib/php-fpm.php
+  - contrib/npm.php
+  - contrib/rsync.php
+
+hosts:
+  csweet:
+    stage: dev_local
+    branch: master
+    local: true
+    user: csweet
+    http_user: csweet
+    writable_mode: chmod
+    deploy_path: ~/deployertest
+    php_fpm_reload: false
+
+  development-sweet-server:
+    stage: dev
+    branch: develop
+    hostname: jetworks145.dev.sweet-server.co.uk
+    remote_user: panels-jetworks145-com
+    configFile: /Users/csweet/.ssh/config
+    identityFile: /Users/csweet/.ssh/id_rsa
+    forwardAgent: true
+    multiplexing: true
+    deploy_path: ~/apps/panels-jetworks145-com/site
+    http_user: www-data
+    php_fpm_reload: true
+
+  development:
+    stage: dev
+    branch: develop
+    hostname: dev.jetworks.mrotoolbox.com
+    remote_user: dev-jetworks-mrotoolbox-com
+    configFile: /Users/csweet/.ssh/config
+    identityFile: /Users/csweet/.ssh/id_rsa
+    forwardAgent: true
+    multiplexing: true
+    deploy_path: ~/apps/dev-jetworks-mrotoolbox-com/site
+    http_user: dev-jetworks-mrotoolbox-com
+    php_fpm_reload: true
+
+  a-safety-net-spacer:
+    stage: dev
+    branch: development
+    hostname: a-safety-net-spacer.com
+    configFile: /Users/csweet/.ssh/config
+    identityFile: /Users/csweet/.ssh/id_rsa
+    forwardAgent: true
+    multiplexing: true
+    deploy_path: ~/deployertest
+
+  live:
+    stage: live
+    branch: master
+    hostname: jetworks.mrotoolbox.com
+    remote_user: live-jetworks-mrotoolbox-com
+    configFile: /Users/csweet/.ssh/con2fig
+    identityFile: /Users/csweet/.ssh/i2d_rsa
+    forwardAgent: true
+    multiplexing: true
+    deploy_path: ~/apps/live-jetworks-mrotoolbox-com/site
+    http_user: live-jetworks-mrotoolbox-com
+    php_fpm_reload: true

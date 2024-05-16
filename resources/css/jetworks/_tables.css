@@ -1,0 +1,43 @@
+@layer components {
+
+    th,td{
+        @apply text-left;
+    }
+
+    /** Tables **/
+    table.jw-table{
+        @apply min-w-full divide-y divide-gray-300
+    }
+
+    table.jw-table thead{
+        @apply bg-gray-100
+    }
+
+    table.jw-table tbody{
+        @apply divide-y divide-gray-300 bg-white
+    }
+
+    table.jw-table th,
+    table.jw-table td{
+        @apply px-4 py-4 text-sm
+    }
+    table.jw-table th {
+        @apply text-gray-400 font-semibold;
+        &.sticky{
+            @apply bg-gray-100 top-0 z-10
+        }
+
+    }
+    table.jw-table td{
+        @apply text-gray-900
+    }
+
+    table.jw-table tr > th:first-of-type,
+    table.jw-table tr > td:first-of-type{
+        @apply pl-4 pr-3 sm:pl-6
+    }
+    table.jw-table th.hidden{
+        @apply relative py-3.5 pl-3 pr-4 sm:pr-6
+    }
+
+}
